@@ -6,4 +6,4 @@ This project is about system administration. In this article, I'll write down ev
  - What is  a Network?
  
  ## What is a Network?
-	A network refers to two or more connected devices that can share resources.
+A network refers to two or more connected devices that can share resources.
