@@ -4,7 +4,7 @@ OBJ			=		$(SRC:.cpp=.o)
 
 HEAD		=		-I./include
 
-CXXFLAGS	=		-Wall -Wextra -Werror
+CXXFLAGS	=		#-Wall -Wextra -Werror
 
 CXX			=		c++
 
