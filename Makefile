@@ -28,7 +28,7 @@ run: all
 
 push:
 	@git add .
-	@git commit -m "by auto push script `cypher`"
+	@git commit -m "by auto push script \`cypher\`"
 	@git push
 
 .PHONY: all clean fclean re run push
