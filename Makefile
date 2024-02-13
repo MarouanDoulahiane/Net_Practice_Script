@@ -13,22 +13,22 @@ NAME		=		NetPractise_v0.1
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME) $(HEAD)
+	@$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME) $(HEAD)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
 run: all
-	./$(NAME)
+	@./$(NAME)
 
 push:
-	git add .
-	git commit -m "by auto push script `cypher`"
-	git push
+	@git add .
+	@git commit -m "by auto push script `cypher`"
+	@git push
 
 .PHONY: all clean fclean re run push
