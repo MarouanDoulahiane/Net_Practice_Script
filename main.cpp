@@ -29,7 +29,7 @@ void	printSubnetRanges(const char *subnet, const char *subnetMask, int remainder
 		temp += to_string((int)(unsigned char)subnet[3 - i]);
 		temp += ".";
 	}
-	while (part < 256)
+	while (part < (int)pow(2, 8 * (4 - dontTouch)))
 	{
 		cout << "valid rang : " << temp << part << " -> " << temp << part + increment - 1 << endl;
 		part += increment;
